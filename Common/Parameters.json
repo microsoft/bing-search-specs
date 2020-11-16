@@ -1,0 +1,21 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "2020-06-10",
+    "title": "Common Referenced Parameters File",
+    "description": "File containing commonly referenced parameters."
+  },
+  "paths": {},
+  "parameters": {
+    "GlobalEndpoint": {
+      "name": "Endpoint",
+      "description": "Supported Bing Search endpoints (protocol and hostname, for example: \"https://westus.api.bing.microsoft.com\", \"https://api.bing.microsoft.com\").",
+      "x-ms-parameter-location": "client",
+      "required": true,
+      "type": "string",
+      "in": "path",
+      "x-ms-skip-url-encoding": true,
+      "default": "https://api.bing.microsoft.com"
+    }
+  }
+}
