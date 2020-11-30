@@ -3,7 +3,7 @@
 These settings apply only when `--ruby` is specified on the command line.
 
 ``` yaml
-package-name: azure_bing_websearch
+package-name: microsoft_bing_websearch
 package-version: "0.16.0"
 azure-arm: true
 ```
@@ -18,10 +18,10 @@ batch:
 ### Tag: release_1_0 and ruby
 
 These settings apply only when `--tag=release_1_0 --ruby` is specified on the command line.
-Please also specify `--ruby-sdks-folder=<path to the root directory of your azure-sdk-for-ruby clone>`.
+Please also specify `--ruby-sdks-folder=<path to the root directory of your microsoft-sdk-for-ruby clone>`.
 
 ``` yaml $(tag) == 'release_1_0' && $(ruby)
-namespace: "Azure::Bing::WebSearch::V1_0"
-output-folder: $(ruby-sdks-folder)/data/azure_Bing_websearch/lib
+namespace: "Microsoft::Bing::WebSearch::V1_0"
+output-folder: $(ruby-sdks-folder)/data/microsoft_Bing_websearch/lib
 title: "WebSearchClient"
 ```

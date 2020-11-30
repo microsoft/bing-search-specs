@@ -152,7 +152,7 @@
           },
           {
             "name": "knowledgeRequest",
-            "x-ms-client-name": "VisualSearchRequest",
+            "x-ms-client-name": "VisualSearch",
             "in": "formData",
             "description": "The form data is a JSON object that identifies the image using an insights token or URL to the image. The object may also include an optional crop area that identifies an area of interest in the image. The insights token and URL are mutually exclusive – do not specify both. You may specify knowledgeRequest form data and image form data in the same request only if knowledgeRequest form data specifies the cropArea field only (it must not include an insights token or URL).",
             "required": false,
@@ -448,17 +448,6 @@
           "description": "A string representing the type of action.",
           "readOnly": true,
           "type": "string"
-        },
-        "_type": {
-          "type": "string",
-          "description": "Specifies the sub-class of the action.",
-          "enum": [
-            "ImageEntityAction",
-            "ImageModuleAction",
-            "ImageRecipesAction",
-            "ImageRelatedSearchesAction",
-            "ImageShoppingSourcesAction"
-          ]
         }
       }
     },
